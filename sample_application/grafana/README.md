@@ -7,13 +7,27 @@ the `grafana/fly.toml` file in this repo, replace the `<YOU APP NAME GOES HERE>`
 `<YOUR GRAFANA ADMIN PASSWORD GOES HERE>` placeholders. If there are other
 configuration values that you would like to change make those as well.
 
-After the `fly.toml` file has been updated to fit your needs, go ahead and run
-`flyctl deploy` in the terminal (make sure that your current working directory
-contains the `fly.toml` file that you just edited). After the deployment
-finishes, you should be able to run `flyctl open` and a browser window will open
-up with your Grafana instance. The username will be `admin` and the password
-will be whatever you provided in place of the `<YOUR GRAFANA ADMIN PASSWORD GOES HERE>`
-placeholder.
+After the `fly.toml` file has been updated to fit your needs, run the following commands
+to deploy Grafana (make sure that your current working directory contains the
+`fly.toml` file that you just edited):
+
+```shell
+$ flyctl apps create todo-list-grafana --no-config
+...
+
+$ flyctl volumes create grafana_storage --region ord # Or pick the region closest to you
+...
+
+$ flyctl deploy
+...
+1 desired, 1 placed, 1 healthy, 0 unhealthy [health checks: 1 total, 1 passing]
+--> v0 deployed successfully
+```
+
+After the deployment finishes, you should be able to run `flyctl open` and a
+browser window will open up with your Grafana instance. The username will be
+`admin` and the password will be whatever you provided in place of the
+`<YOUR GRAFANA ADMIN PASSWORD GOES HERE>` placeholder.
 
 Once you are logged into Grafana you'll need to do a little bit of configuration so that
 the you can hook up PromEx with Grafana. Let's do that next.
