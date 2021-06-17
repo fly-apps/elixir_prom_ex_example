@@ -38,7 +38,7 @@ communicate with your alloced Prometheus instance. Let's fix that :).
 Go to `https://<YOU GRAFANA INSTANCE URL>/datasources` and click the `Add data source` button. From there,
 select Prometheus as your desired data source and configure it as shown below:
 
-![Grafana Prometheus Datasource Configuration](images/prom_grafana_config.png.png)
+![Grafana Prometheus Datasource Configuration](images/prom_grafana_config.png)
 
 Be sure to use the auth token that you generated while deploying the Todo List application for the `Authorization`
 header value. Also be sure to name the datasource `prometheus` (with a lower-case `p`) given that is what
