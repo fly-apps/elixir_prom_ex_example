@@ -1,0 +1,32 @@
+<section class="phx-hero">
+  <p>Add your TodoList++ Tasks here:</p>
+
+  <form phx-submit="create_new_task">
+    <input
+      id="create_new_task_input"
+      type="text"
+      name="new_task"
+      placeholder="New task description"
+      autocomplete="off"
+      phx-hook="ClearInput"
+    />
+
+    <button type="submit" phx-disable-with="Adding...">Add Task</button>
+  </form>
+</section>
+
+<section class="phx-hero todo-list">
+  <h2>Current TODO List:</h2>
+
+  <%= if @num_tasks == 0 do %>
+    Nothing to do but read a good book!
+  <% else %>
+    <%= for {key, description} <- @tasks do %>
+      <p>
+        <button phx-click="complete_task" phx-value-id="<%= key %>">Done</button>
+        &nbsp;
+        <%= description %>
+      </p>
+    <% end %>
+  <% end %>
+</section>
