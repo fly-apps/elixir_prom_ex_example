@@ -41,3 +41,5 @@ $ flyctl auth token # You'll need this so that Grafana can communicate with Prom
 With that all done, you should be able to go to your application's URL and add items
 to your todo list! Be sure to open up a few separate browser sessions and watch
 how the task list is synchronized across all the different sessions!
+
+https://user-images.githubusercontent.com/4753634/122478943-4d12fa00-cf98-11eb-8d19-7163e26fc743.mov
