@@ -54,9 +54,11 @@ select Prometheus as your desired data source and configure it as shown below:
 
 ![Grafana Prometheus Datasource Configuration](images/prom_grafana_config.png)
 
-Be sure to use the auth token that you generated while deploying the Todo List application for the `Authorization`
-header value. Also be sure to name the datasource `prometheus` (with a lower-case `p`) given that is what
-PromEx has set as a `datasource_id`.
+Be sure to use the auth token that you generated while deploying the Todo List
+application for the `Authorization` header value. Also be sure to prefix the
+`Authorization` value with `Bearer <YOUR TOKEN HERE>`. Make sure to name the
+datasource `prometheus` (with a lower-case `p`) given that is what PromEx has
+set as a `datasource_id`.
 
 Finally, press the `Save & test` button and you are all set! With that in
 place, if you go back to your dashboards they will all magically work given
