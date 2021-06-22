@@ -7,7 +7,7 @@ deployment of the Grafana instance in the `grafana/README.md` if you have gone t
 that already. In fact, if you haven't gone through that README first you should do that
 prior to starting on this one.
 
-All you need to do to change in this repo prior to deploying is the edit of
+All you need to change in this repo before deploying is changing
 `<YOU APP NAME GOES HERE>` in `fly.toml` to the name of your application.
 
 After that is done, run the following shell commands (make sure you are in the
