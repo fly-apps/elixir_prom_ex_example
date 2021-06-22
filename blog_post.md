@@ -25,7 +25,7 @@ would have to be context switching between feature work, and testing new deploym
 A more scalable solution would be to briefly smoke test the application after a deployment (as a sanity check), and then
 trust that the monitoring tooling will pick up on and report on any errors. If your monitoring solution reports that
 your HTTP JSON API is now responding with 400 or 500 errors, you know you have a problem and you can either rollback
-the application, or stop if from propagating to across the cluster. The key point being that you can proactively address
+the application, or stop it from propagating to across the cluster. The key point being that you can proactively address
 issues as opposed to being blind to them or sinking precious engineer time into testing all the things.
 
 While ensuring that production users are not experiencing issues is a huge benefit of application monitoring, there are
@@ -82,7 +82,7 @@ Let's see how we structure an Elixir application for easy monitoring with Promet
 
 ## Elixir Application Monitoring
 
-Whenever I write a production-grade Elixir application that is in need for monitoring, I reach for the
+Whenever I write a production-grade Elixir application that needs monitoring, I reach for the
 [PromEx](https://github.com/akoutmos/prom_ex) library that I maintain. The reason I reach for PromEx (and the reason I
 wrote it), is because it manages both the collection of metrics and the lifecycle of the complimentary Grafana
 dashboards. At a library design level, PromEx is a plugin style library, where you enable a plugin for whatever library
