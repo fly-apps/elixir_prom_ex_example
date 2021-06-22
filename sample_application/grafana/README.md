@@ -46,7 +46,7 @@ file for instructions).
 
 After the Todo List application has been deployed, you'll notice that all of the Grafana
 dashboards listed in the `TodoList.PromEx` module have been uploaded. You'll also probably notice that
-none of them work! The reason for that being that your Grafana instance has not been configured to
+none of them work! The reason is your Grafana instance has not been configured to
 communicate with your alloced Prometheus instance. Let's fix that :).
 
 Go to `https://<YOU GRAFANA INSTANCE URL>/datasources` and click the `Add data source` button. From there,
