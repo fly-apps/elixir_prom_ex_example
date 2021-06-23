@@ -75,8 +75,10 @@ path = "/metrics"
 
 In order to visualize your Prometheus metrics, you'll need to have an instance of Grafana running somewhere. You can
 deploy your own Grafana instance on Fly.io by [following this guide](https://github.com/fly-apps/grafana), or you can
-run a managed solution. Which ever route you take, all you then need to do is configure Grafana to [communicate with the
-Fly.io managed Prometheus instance](https://fly.io/docs/reference/metrics/#grafana) and you are good to go!
+run a managed solution (like [Grafana Cloud](https://grafana.com/products/cloud/) for example). Which ever route you 
+take, all you then need to do is configure Grafana to 
+[communicate with the Fly.io managed Prometheus instance](https://fly.io/docs/reference/metrics/#grafana) and you 
+are good to go!
 
 Let's see how we structure an Elixir application for easy monitoring with Prometheus.
 
