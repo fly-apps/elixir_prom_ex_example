@@ -3,7 +3,7 @@
 ## Deploying a Grafana Instance
 
 Deploying Grafana to Fly.io is actually very easy. All you need to do is copy
-the `grafana/fly.toml` file in this repo, replace the `<YOU APP NAME GOES HERE>` and
+the `grafana/fly.toml` file in this repo, replace the `<YOUR APP NAME GOES HERE>` and
 `<YOUR GRAFANA ADMIN PASSWORD GOES HERE>` placeholders. If there are other
 configuration values that you would like to change make those as well.
 
