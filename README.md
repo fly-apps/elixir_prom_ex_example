@@ -1,6 +1,6 @@
 # Monitoring Your Fly.io Apps With Prometheus
 
-This is the companion project and examples for the blog post [Monitoring Your Fly.io Apps With Prometheus](https://fly.io/blog/monitoring-your-fly-io-apps-with-prometheus/).
+This is the companion project and examples for the blog post [Monitoring Elixir Apps on Fly.io With Prometheus and PromEx](https://fly.io/blog/monitoring-your-fly-io-apps-with-prometheus/).
 Go there first for an overview and explanation.
 
 ## Getting started
